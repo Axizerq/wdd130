@@ -108,7 +108,7 @@ nav  {
   display: flex;
 }
 nav a {
-  padding:1em;
+  padding:10% 0;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
