@@ -111,6 +111,7 @@ nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
+  width: 33%;
   padding: 10px;
 }
 nav a:link, nav a:visited {
