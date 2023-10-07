@@ -2,3 +2,52 @@
     max-width: 1600px;
     margin: 0 auto;
 }
+
+nav a {
+    text-align: center;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: #2b3c5e;
+}
+
+body {
+    background-color: #2b3c5e;
+}
+
+header {
+    background-color: #2b3c5e;
+}
+
+nav a:hover {
+    background-color: #2b3c5e;
+}
+
+.book, .join {
+    background-color: #2b3c5e;
+}
+
+.book:hover, .join:hover {
+    background-color: #2b3c5e;
+}
+
+.msg {
+    background-color: #2b3c5e;
+}
+
+footer {
+    background-color: #2b3c5e;
+}
