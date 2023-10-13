@@ -92,7 +92,7 @@ h4 {
 
 .msg p {
     color: #dbe3f0;
-    font-size: 8em;
+    font-size: .8em;
     padding-bottom: 15px;
 }
 
@@ -144,4 +144,9 @@ h2 {
 
 main section img {
     box-sizing: border-box;
+}
+
+.join {
+    color: #396E94;
+    background-color: white;
 }
