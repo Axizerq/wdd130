@@ -33,7 +33,6 @@ body {
     background-color: #2b3c5e;
     margin: 0;
     padding: 0;
-    font-family: "Roboto Condensed", Montserrat, Helvetica, sans-serif;
     font-size: 22px;
 }
 
@@ -76,8 +75,8 @@ footer {
 
 .home-title {
     color: #dbe3f0;
-    font-size: 2em;
     font-style: "Roboto Condensed";
+    font-size: 2em;
     margin-top: 10px;
 }
 
@@ -146,7 +145,7 @@ main section img {
     box-sizing: border-box;
 }
 
-.join {
+.join, .book {
     color: #396E94;
     background-color: white;
 }
