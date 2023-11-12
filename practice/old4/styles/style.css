@@ -10,15 +10,15 @@
     image-resolution: 900px 900px;
 }
    
-/* .home-grid */ body {
+.home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0px;
     background-color: grey;
  }
 
-#city {
-    grid-column: 2/3;
+img {
+    grid-column: 1/2;
     grid-row: 1/2;
     /* grid-column-start: 0;
     grid-column-end: 3; */
@@ -29,10 +29,6 @@
     grid-column: 1/2;
     grid-row: 1/2; 
     z-index: 1;
-    font-size: 1.5em; 
+    font-size: 8em; 
     align-self: center;
- }
-
- h2 {
-    font-size: 30%;
  }
