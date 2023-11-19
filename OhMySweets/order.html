@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Desserts | Oh, My Sweets! | Home</title>
+</head>
+<body>
+    <div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="img/logo.jpg" alt="Oh,MySweets Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="desserts.html">Adventures</a>
+            <a href="order.html">Order</a>
+            <a href="site-plan.html">Site Plan</a>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="img/home/wide.jpg" alt="PMacaroons pic">
+        </div>
+        <section id="hero-msg">
+            <h1 class="desserts-title">Oh! My</br>
+            Sweets</h1>
+        </section>
+    </div>
+    <main class="order-grid">
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Phone Number:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Your Wishes:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+              
+            </ul>
+          </form>
+    </main>
+    
+        <footer>
+            <p>Oh!My Sweets &copy; 2023 - Andrey Tochilin</p>
+    <p><a href="site-plan.html">Site Plan</a></p>
+    <p><a href="order.html">Oder</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="img/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://instagram.com/ooh.mysweets?igshid=NGVhN2U2NjQ0Yg==" target="_blank">
+            <img src="img/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+        </footer>
+    </div>
+
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
