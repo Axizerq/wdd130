@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Shadows+Into+Light&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    /* background-color: #2b3c5e; */
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+header {
+   /* background-color: #2b3c5e; */
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    background-color: #a46843;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  nav  {
+    justify-content: space-around;
+    list-style-type: none;
+    display: flex;
+  }
+  nav a {
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  nav a:link, nav a:visited {
+    color: white;
+
+  }
+  nav a:hover {
+    color: white;
+    background-color: #bd8e62;
+  }
+
+.logo {
+    width: 90px;
+    border-radius: 50%;
+}
+
+#logo_link { 
+    padding-top: 5px; 
+    justify-self: center;
+    align-self: center;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.photo-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    /* margin-top: -70px; */
+    align-items: center;
+    grid-gap: 50px;
+}
+
+/* 1row */
+.exmpl1 {
+    width: 300Px;
+    height: 300px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    box-shadow: 5px 5px 10px black;
+    transition: transform .5s;
+    border-radius: 10px;
+}
+.exmpl2 {
+    width: 300Px;
+    height: 300px;
+    grid-column: 5/7;
+    grid-row: 1/2;
+    box-shadow: 5px 5px 10px black;
+    transition: transform .5s;
+    border-radius: 10px;
+}
+.exmpl3 {
+    width: 300Px;
+    height: 300px;
+    grid-column: 8/10;
+    grid-row: 1/2;
+    box-shadow: 5px 5px 10px black;
+    transition: transform .5s;
+    border-radius: 10px;
+}
+/* 2 row */
+.exmpl4 {
+    width: 300Px;
+    height: 300px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    box-shadow: 5px 5px 10px black;
+    transition: transform .5s;
+    border-radius: 10px;
+}
+.exmpl5 {
+    width: 300Px;
+    height: 300px;
+    grid-column: 5/7;
+    grid-row: 2/3;
+    box-shadow: 5px 5px 10px black;
+    transition: transform .5s;
+    border-radius: 10px;
+}
+.exmpl6 {
+    width: 300Px;
+    height: 300px;
+    grid-column: 8/10;
+    grid-row: 2/3;
+    box-shadow: 5px 5px 10px black;
+    transition: transform .5s;
+    border-radius: 10px;
+}
+/* End photos */
+
+.exmpl1:hover, .exmpl2:hover, .exmpl3:hover, .exmpl4:hover, .exmpl5:hover, .exmpl6:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+/* Buttons */
+.button-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    align-items: start;
+    grid-gap: 25px;
+    margin-bottom: 60px;
+}
+
+.book1, .book2 {
+    color: white;
+    background-color: #bd8e62;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    
+}
+
+.book1 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: 30px;
+}
+.book2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.book1:hover, .book2:hover {
+    background-color: #a46843;
+    color: #dbe3f0;
+}
+/* Buttons end */
+
+footer {
+    background-color: #a46843;
+    color: #dbe3f0;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
