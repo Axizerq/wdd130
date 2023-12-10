@@ -10,11 +10,11 @@
     <div id="content">
     <header>
         <a id="logo_link" href="index.html">
-            <img class="logo" src="img/logo.jpg" alt="Oh,MySweets Logo">
+            <img class="logo" src="img/logo_new.png" alt="Oh,MySweets Logo">
         </a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="desserts.html">Adventures</a>
+            <a href="desserts.html">Desserts</a>
             <a href="order.html">Order</a>
             <a href="site-plan.html">Site Plan</a>
         </nav>
@@ -22,35 +22,40 @@
 
     <div id="hero">
         <div id="hero-box">
-            <img id="hero-img" src="img/home/wide.jpg" alt="PMacaroons pic">
+            <img id="hero-img" src="img/home/wide_new.png" alt="PMacaroons pic">
         </div>
         <section id="hero-msg">
-            <h1 class="desserts-title">Oh! My</br>
-            Sweets</h1>
+            <h1 class="desserts-title">Oh! My Sweets</h1>
         </section>
     </div>
     <main class="order-grid">
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-              <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
-              </li>
-              <li>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="user_phone" />
-              </li>
-              <li>
-                <label for="msg">Your Wishes:</label>
-                <textarea id="msg" name="user_message"></textarea>
-              </li>
-              <li class="button">
-                <button type="submit">Send your message</button>
-              </li>
-              
-            </ul>
-          </form>
+        <section class="make_an_order">
+            <h4>Leave yourcontact details, your wishes and we </br>
+            will contact you as possible!</h4>
+
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                  <li>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                  </li>
+                  <li>
+                    <label for="mail">Phone Number:</label>
+                    <input type="email" id="mail" name="user_email" />
+                  </li>
+                  <li>
+                    <label for="msg">Your Wishes:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                  <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+                  
+                </ul>
+              </form>
+               
+       </section>
     </main>
     
         <footer>
@@ -68,15 +73,25 @@
         </footer>
     </div>
 
+
     <script>
+        // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
         const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
             e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
             feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
             feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
         });
     </script>
+
+
 </body>
 </html>
