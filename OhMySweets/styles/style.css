@@ -366,9 +366,10 @@ form li + li {
 
 label {
   /* Uniform size & alignment */
-  display: inline-block;
-  width: 90px;
+ display: inline-block;
+  /*width: 90px;*/
   text-align: right;
+  color: #370d00;
 }
 
 input,
